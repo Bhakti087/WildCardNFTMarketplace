@@ -91,7 +91,7 @@ function Navbar() {
           </ul>
         </div>
         <div className='navbar-end'>
-          <a className='btn'>Get started</a>
+          <a className='btn'>Connect Wallet</a>
         </div>
       </div>
     </div>
