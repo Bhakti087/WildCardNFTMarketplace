@@ -1,9 +1,10 @@
 import React from 'react'
+import HeroSection from './HeroSection'
 
-function Home() {
+const Home = () => {
   return (
     <div>
-      <div>Here will be the dashboard</div>
+      <HeroSection />
     </div>
   )
 }

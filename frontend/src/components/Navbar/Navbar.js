@@ -91,7 +91,7 @@ function Navbar() {
           </ul>
         </div>
         <div className='navbar-end'>
-          <a className='btn'>Connect Wallet</a>
+          <button class='btn btn-active btn-primary'>Button</button>
         </div>
       </div>
     </div>

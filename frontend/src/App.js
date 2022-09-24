@@ -1,10 +1,15 @@
 import Navbar from './components/Navbar/Navbar'
 import './index.css'
-function App() {
+import Paths from './Paths/Paths'
+
+const App = () => {
   return (
-    <div>
-      <Navbar />
-    </div>
+    <>
+      <div>
+        <Navbar />
+        <Paths />
+      </div>
+    </>
   )
 }
 
