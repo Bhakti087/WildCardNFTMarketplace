@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroSection from './HeroSection'
 
-function Home() {
+const Home = () => {
   return (
     <HeroSection />
   )
