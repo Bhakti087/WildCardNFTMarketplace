@@ -1,6 +1,26 @@
 import React from 'react'
+//connect wallet
+import Web3Modal from 'web3modal'
+import { ethers } from 'ethers'
+import images from '../../images'
 
 function Navbar() {
+  async function connectwallet() {
+    try {
+      let web3Modal = new Web3Modal({
+        cacheProvider: false,
+      })
+
+      const web3ModalInstance = await web3Modal.connect()
+      const web3ModalProvider = new ethers.providers.Web3Provider(
+        web3ModalInstance
+      )
+      console.log(web3ModalProvider)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   return (
     <div>
       <div className='navbar bg-base-100'>
@@ -52,11 +72,18 @@ function Navbar() {
                 </ul>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>VIEW WILDCARD</a>
               </li>
             </ul>
           </div>
-          <a className='btn btn-ghost normal-case text-xl'>daisyUI</a>
+          <a href=''>
+            <img
+              src={images.WildCardlogo}
+              alt='NFT MARKET PLACE'
+              width={60}
+              height={60}
+            />
+          </a>
         </div>
         <div className='navbar-center hidden lg:flex'>
           <ul className='menu menu-horizontal p-0'>
@@ -86,16 +113,17 @@ function Navbar() {
               </ul>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>VIEW WILDCARD</a>
             </li>
           </ul>
         </div>
         <div className='navbar-end'>
-          <button class='btn btn-active btn-primary'>Button</button>
+          <button className='btn btn-primary'>
+            <a onClick={connectwallet}>Connect Wallet</a>
+          </button>
         </div>
       </div>
     </div>
   )
 }
-
 export default Navbar

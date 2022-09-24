@@ -1,35 +1,29 @@
 import React from 'react'
+import Style from './HeroSection.module.css'
+import images from '../../images'
 
 const HeroSection = () => {
   return (
-    <div>
-      <div className='carousel w-full'>
-        <div id='item1' className='carousel-item w-full'>
-          <img src='https://placeimg.com/800/200/arch' className='w-full' />
+    <div className={Style.heroSection}>
+      <div className={Style.heroSection_box}>
+        <div className={Style.heroSection_box_left}>
+          <h1>
+            Discover, Buy and sell NFTs for the <span>ENDANGERED.</span>
+          </h1>
+          <p>
+            A modern and authentic way to invest , raise funds and protect
+            animals.
+          </p>
+          {/* <Button btnName="Start your search" /> */}
         </div>
-        <div id='item2' className='carousel-item w-full'>
-          <img src='https://placeimg.com/800/200/arch' className='w-full' />
+        <div className={Style.heroSection_box_right}>
+          <img
+            src={images.heroanimals}
+            alt='Hero section'
+            width={400}
+            height={400}
+          />
         </div>
-        <div id='item3' className='carousel-item w-full'>
-          <img src='https://placeimg.com/800/200/arch' className='w-full' />
-        </div>
-        <div id='item4' className='carousel-item w-full'>
-          <img src='https://placeimg.com/800/200/arch' className='w-full' />
-        </div>
-      </div>
-      <div className='flex justify-center w-full py-2 gap-2'>
-        <a href='#item1' className='btn btn-xs'>
-          1
-        </a>
-        <a href='#item2' className='btn btn-xs'>
-          2
-        </a>
-        <a href='#item3' className='btn btn-xs'>
-          3
-        </a>
-        <a href='#item4' className='btn btn-xs'>
-          4
-        </a>
       </div>
     </div>
   )
