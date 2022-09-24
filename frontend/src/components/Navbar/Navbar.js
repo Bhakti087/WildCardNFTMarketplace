@@ -1,4 +1,6 @@
 import React from 'react'
+import images from "../../images";
+
 
 function Navbar() {
   return (
@@ -52,11 +54,14 @@ function Navbar() {
                 </ul>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>VIEW WILDCARD</a>
               </li>
             </ul>
           </div>
-          <a className='btn btn-ghost normal-case text-xl'>daisyUI</a>
+          <a href=""><img src={images.WildCardlogo}
+              alt="NFT MARKET PLACE"
+              width={60}
+              height={60} /></a>
         </div>
         <div className='navbar-center hidden lg:flex'>
           <ul className='menu menu-horizontal p-0'>
@@ -86,7 +91,7 @@ function Navbar() {
               </ul>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>VIEW WILDCARD</a>
             </li>
           </ul>
         </div>

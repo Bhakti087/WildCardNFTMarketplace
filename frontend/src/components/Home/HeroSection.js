@@ -1,9 +1,8 @@
 import React from "react";
-// import Image from "next/image";
+
 
 //INTERNAL IMPORT
 import Style from "./HeroSection.module.css";
-// import { Button } from "../componentsindex";
 import images from "../../images";
 
 const HeroSection = () => {
