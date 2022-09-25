@@ -4,6 +4,7 @@ import HeroSection from './components/Home/HeroSection'
 import Cards from './components/Home/Cards'
 import './index.css'
 import {Route, Switch} from "react-router-dom";
+import Partners from './components/Home/Partners';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <Cards />
+      <Partners />
      </div>
   //  </>
 
