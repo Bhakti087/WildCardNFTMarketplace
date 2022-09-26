@@ -4,7 +4,7 @@ import Style from './Partners.module.css'
 export default function Partners() {
   return (
   <div>
-  <div className={Style.client}>
+<div className={Style.client}>
 	<div className={Style.container}>
 		<div className={Style.row}>
 
