@@ -1,0 +1,31 @@
+.heading{
+  font-size: 2rem;
+  line-height: 2rem; 
+  margin-left: 51px;
+  margin-bottom: 50px;
+  }
+  .filepond--drop-label {
+    color: #4c4e53;
+  }
+  
+  .filepond--label-action {
+    text-decoration-color: #babdc0;
+  }
+  
+  .filepond--panel-root {
+    background-color: #edf0f4;
+  }
+  
+  
+  /**
+   * Page Styles
+   */
+  html {
+    padding: 20vh 0 0;
+  }
+  
+  .filepond--root {
+    width:170px;
+    margin: 0 auto;
+  }
+  

@@ -5,22 +5,16 @@ import Cards from './components/Home/Cards'
 import './index.css'
 import {Route, Switch} from "react-router-dom";
 import Partners from './components/Home/Partners';
-
+import Create from './components/Create/Create';
+import Paths from './Paths/Paths';
 
 function App() {
   return (
-  //  <>
-   
-  //  <Switch>
-    // <Route path="/" />
-  //  </Switch>
     <div>
       <Navbar />
-      <HeroSection />
-      <Cards />
-      <Partners />
+      <Paths />     
      </div>
-  //  </>
+
 
    
   );
