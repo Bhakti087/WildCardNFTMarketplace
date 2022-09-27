@@ -1,3 +1,11 @@
-.cards {
-    margin: 3rem;
+.cards{
+  margin:3rem;
+
+}
+
+.heading{
+font-size: 2rem;
+line-height: 2rem; 
+margin-left: 51px;
+margin-bottom: 50px;
 }

@@ -1,16 +1,23 @@
 import Navbar from './components/Navbar/Navbar'
+// import Paths from './Paths/Paths'
+import HeroSection from './components/Home/HeroSection'
+import Cards from './components/Home/Cards'
 import './index.css'
-import Paths from './Paths/Paths'
+import {Route, Switch} from "react-router-dom";
+import Partners from './components/Home/Partners';
+import Create from './components/Create/Create';
+import Paths from './Paths/Paths';
 
-const App = () => {
+function App() {
   return (
-    <>
-      <div>
-        <Navbar />
-        <Paths />
-      </div>
-    </>
-  )
+    <div>
+      <Navbar />
+      <Paths />     
+     </div>
+
+
+   
+  );
 }
 
 export default App

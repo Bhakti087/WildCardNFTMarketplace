@@ -1,0 +1,22 @@
+
+.title h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    color: #000;
+    letter-spacing: 0.3px;
+    padding: 0;
+}
+
+.client {
+  display: flexbox;
+	padding:4em 0em;
+  flex-wrap: wrap;
+
+
+}
+.client .title {
+	margin-bottom: 6em;
+}

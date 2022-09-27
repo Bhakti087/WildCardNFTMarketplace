@@ -8,13 +8,13 @@ const HeroSection = () => {
       <div className={Style.heroSection_box}>
         <div className={Style.heroSection_box_left}>
           <h1>
-            Discover, Buy and sell NFTs for the <span>ENDANGERED.</span>
+            <b>Discover, Buy and sell NFTs for the <span>ENDANGERED.</span></b>
           </h1>
           <p>
             A modern and authentic way to invest , raise funds and protect
             animals.
           </p>
-          {/* <Button btnName="Start your search" /> */}
+          <button class="btn btn-outline btn-primary">Start your search</button>
         </div>
         <div className={Style.heroSection_box_right}>
           <img
